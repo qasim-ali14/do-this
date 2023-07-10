@@ -17,21 +17,7 @@ import './Signup.css'
             <input type="email" placeholder='xyz@gmail.com' />
             <label htmlFor="password">Password:</label>
             <input type="password" placeholder='*******' maxLength={8} />
-            {/* <label htmlFor="Name">Choose your favorate language:</label>
-            <input type="radio" name="fav-lang" value="html" />
-            <label htmlFor="html">html</label>
-            <input type="radio" name="fav-lang" value="css" />
-            <label htmlFor="css">css</label>
-            <input type="radio" name="fav-lang" value="java" />
-            <label htmlFor="java">java</label>
-            <label htmlFor="Name">select your cars</label>
-            <label htmlFor="HONDA">HONDA</label>
-            <input type="checkbox" name="v1" value="honda"/>
-            <label htmlFor="MERCEDES">MERCEDES</label>
-            <input type="checkbox" name="v2" value="mercedes"/>
-            <label htmlFor="LAMBO">LAMBORGINI</label>
-            <input type="checkbox" name="v3" value="lamborgini"/>
-            */}
+          
             <button className='btn'>Submit</button>
 
         </form>
