@@ -1,3 +1,5 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap');
 *{
     margin: 0%;
     padding: 0%;
@@ -5,21 +7,74 @@
 }
 body{
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Nunito Sans', sans-serif;
 
 }
 .main{
    
-    border: 8px solid saddlebrown;
+    
+    display: flex;
+    justify-content: center;
 }
 .signup{
-    padding-top: 5rem;
-    border: 5px solid darkgreen;
-   
+    border: 3px solid darkgreen;
+    width: 30rem;
+    padding-top: 1.2rem;
+    margin-top: 1rem;
+    margin: 10rem 5rem;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
 }
 #form-start{
-    border: 5px solid slategray;
+   
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding:  1.2rem 3rem 3rem;
+}
+ label{
+    
+    margin-right: 12rem;
+    display: block;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+input{
+    width: 20rem;
+    height: 2.8rem;
+    background-color:  rgb(221, 218, 212);
+    outline: floralwhite;
+    border-radius: 0.3rem ;
+    margin: 0.3rem;
+    border: none;
+    border-bottom: 0.2rem solid black;
+    padding-left: 0.3rem;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+input::placeholder
+{
+    font-size: 1rem ;
+    
+    color: rgb(109, 105, 105);
+
+}
+.btn{
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    background-color:#1b3f1e;
+    color: white;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+    font-size: 2rem;
+    margin-left: 4rem;
+    color: #1b3f1e;
+    font-weight: 500;
+    font-style: oblique;
+    font-weight: bolder;
 }
