@@ -19,10 +19,12 @@ body{
 .signup{
     border: 3px solid darkgreen;
     width: 30rem;
+    background-color: rgb(166, 173, 178);
     padding-top: 1.2rem;
     margin-top: 1rem;
     margin: 10rem 5rem;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10rem);
 }
 #form-start{
    
@@ -33,7 +35,7 @@ body{
     padding:  1.2rem 3rem 3rem;
 }
  label{
-    
+    transition: top 0.3s;
     margin-right: 12rem;
     display: block;
     font-size: 1.4rem;
@@ -51,6 +53,7 @@ input{
     border-bottom: 0.2rem solid black;
     padding-left: 0.3rem;
     box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    z-index: 10;
 }
 input::placeholder
 {
@@ -58,6 +61,9 @@ input::placeholder
     
     color: rgb(109, 105, 105);
 
+}
+input:hover{
+    border-bottom: 0.3rem solid rgb(71, 150, 81);
 }
 .btn{
     width: 20rem;
