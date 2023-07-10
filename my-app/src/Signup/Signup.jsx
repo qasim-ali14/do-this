@@ -9,8 +9,8 @@ import './Signup.css'
         <form id="form-start">
             <label htmlFor="Name">Name:</label>
             <input type="text" placeholder='enter your name' maxLength={12}/>
-            <label htmlFor="f.name">F.name:</label>
-            <input type="text" placeholder='enter your f.name'maxLength={12}/>
+            <label htmlFor="f.name">L.name:</label>
+            <input type="text" placeholder='enter your L.name'maxLength={12}/>
             <label htmlFor="age">Age:</label>
             <input type="number" placeholder='enter you age' min={0}/>
             <label htmlFor="email">E-mail:</label>
