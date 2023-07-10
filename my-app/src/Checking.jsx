@@ -4,7 +4,7 @@ import React from 'react'
     <>
     <li>
     props stand for properties.
-    props like a function we take value in parameter.
+    props like a funcstions we take value in parameter.
     props used to send data from onr component to other.
     props can only read like we can not here to new value.
     props take data in object that why we acces them by using key.
