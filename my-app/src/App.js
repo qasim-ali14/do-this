@@ -1,8 +1,12 @@
 import React from "react";
-import Signup from "./Signup/Signup"
+import Checking from "./Checking"
 function App() {
   return (
-   <Signup/>
+    <>
+   <Checking name="Facebook"/>
+   <Checking name="instagram"/>
+   <Checking name="Google"/>
+  </>
   );
 }
 
