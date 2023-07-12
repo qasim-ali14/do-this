@@ -31,10 +31,11 @@ function App() {
     }
   return (
     <>
-    <h1 style={styles.hell}>counting     {state}</h1>
+    {/* <h1 style={styles.hell}>counting ::  {state} ::</h1>
     <button onClick={increasefun} style={styles.btn}>click me to add</button>
     <button onClick={decreasefun} style={styles.btn}>click me to remove</button>
-    <button onClick={removeall} style={styles.btn}>click memto remove all</button>
+    <button onClick={removeall} style={styles.btn}>click memto remove all</button> */}
+    <Signup/>
    {/* <Checking name="Facebook"/>
    <Checking name="instagram"/>
    <Checking name="Google"/> 
