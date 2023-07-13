@@ -1,18 +1,27 @@
 import React from "react";
-import Checking from "./Checking"
 import Signup from "./Signup/Signup"
-import { useState } from "react";
 
+import { useState } from 'react';
+import { useEffect } from "react";
 function App() {
+//use effcct hook
+//use as a side function in  function components.
+//when we want to update dom
+//when we want to fetch something. 
   const [state,setstate]=useState(0);
+  const [data,setdata]=useState('qasim');
+  useEffect(()=>{
+    console.log('mounted data:');
+
+  },[state])
   function increasefun(){
     setstate(state+1);
     }
     function decreasefun(){
       setstate(state-1);
     }
-    function removeall(){
-      setstate(state-state);
+    function update(){
+      setdata('ali');
     }
     const styles={
       btn:{
@@ -31,11 +40,10 @@ function App() {
     }
   return (
     <>
-    {/* <h1 style={styles.hell}>counting ::  {state} ::</h1>
+     <h1 style={styles.hell}>counting ::  {state},{data} ::</h1>
     <button onClick={increasefun} style={styles.btn}>click me to add</button>
     <button onClick={decreasefun} style={styles.btn}>click me to remove</button>
-    <button onClick={removeall} style={styles.btn}>click memto remove all</button> */}
-    <Signup/>
+    <button onClick={update} style={styles.btn}>click to  update</button>  
    {/* <Checking name="Facebook"/>
    <Checking name="instagram"/>
    <Checking name="Google"/> 

@@ -2,7 +2,7 @@ import React from 'react'
  function Checking(props) {
   return (
     <>
-    <li>
+    {/* <li>
     props stand for properties.
     props like a funcstions we take value in parameter.
     props used to send data from onr component to other.
@@ -11,8 +11,10 @@ import React from 'react'
     by this we make components re-usable
     </li>
     <br></br>
-      <button >login with {props.name}</button>
+      { <button >login with {props.name}</button> 
+       */}
+        <h1> you submit for {props.name} times</h1>
     </>
-  )
+  );
 }
 export default Checking;

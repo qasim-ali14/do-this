@@ -1,8 +1,19 @@
 import React from 'react'
 import './Signup.css'
+// import '../Checking'
+// import { useState } from 'react';
+
  function Signup() {
-  return (  <div className='main'>
+//    const [state,setstate]=useState(0);
+//    function add(){
+//     setstate(state+1);
+
+//    }
+    return(
+     <div className='main'>
+        
   <div className="signup">
+       
       <h1 >Sign up</h1>
       <form id="form-start">
           <label htmlFor="Name">Name:</label>
@@ -16,7 +27,9 @@ import './Signup.css'
           <label htmlFor="password">Password:</label>
           <input type="password" placeholder='*******' maxLength={8} />
         
-          <button className='btn'>Submit</button>
+          <button   className='btn'>Submit</button>
+         
+          {/* <Checking name={state}/> */}
 
       </form>
   </div>
