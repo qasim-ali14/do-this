@@ -1,54 +1,27 @@
-import React from "react";
-import Signup from "./Signup/Signup"
-
-import { useState } from 'react';
-import { useEffect } from "react";
+import React, { useState } from "react";
+import { useRef } from "react";
 function App() {
-//use effcct hook
-//use as a side function in  function components.
-//when we want to update dom
-//when we want to fetch something. 
-  const [state,setstate]=useState(0);
-  const [data,setdata]=useState('qasim');
-  useEffect(()=>{
-    console.log('mounted data:');
-
-  },[state])
-  function increasefun(){
-    setstate(state+1);
-    }
-    function decreasefun(){
-      setstate(state-1);
-    }
-    function update(){
-      setdata('ali');
-    }
-    const styles={
-      btn:{
-    width:'20rem',
-    height:'3rem',
-    border:'2px solid green',
-    margin:'3rem',
-
-      },
-      hell:{
-        marginleft:'33rem',
-        fontsize: '3rem',
-        marginleft: '29rem',
-
-      }
-    }
+  //use ref
+  //most used for direct  mamipulate DOM
+  //sometimes we cannot manipulate by state peops so we used this.
+  //we use to manipulate with objevt which ref return.
+  const RefElement=useRef();
+  const [state,setstate]=useState('qasim')
+  console.log(RefElement);
+  //we handle dom with ref by using current which help to change dom
+  function handlein(){
+    RefElement.current.style.color='red';
+  }
+  function reset(){
+    setstate("");
+    RefElement.current.focus();
+  }
   return (
     <>
-     <h1 style={styles.hell}>counting ::  {state},{data} ::</h1>
-    <button onClick={increasefun} style={styles.btn}>click me to add</button>
-    <button onClick={decreasefun} style={styles.btn}>click me to remove</button>
-    <button onClick={update} style={styles.btn}>click to  update</button>  
-   {/* <Checking name="Facebook"/>
-   <Checking name="instagram"/>
-   <Checking name="Google"/> 
-   <Signup/>*/}
-  </>
+    <input  ref={RefElement} value={state} onChange={(e)=>setstate(e.target.value)}/>
+    <button onClick={reset}>reset</button>
+    <button onClick={handlein}> handle input</button>
+    </>
   );
 }
 
