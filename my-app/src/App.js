@@ -1,21 +1,29 @@
-import react from 'react'
+import React from 'react';
 import ChildA from './ChildA';
+import react, { createContext } from 'react'
 
+//how to avoid props drilling 
+//we use context api
+//three steps 1.create context 2.provider 3.consumer
+////how to avoid context api 
+//we  use use 
+const data=createContext();
+const gend=createContext();
 function App() {
-  //prop drilling
-  //when we want to send data from parent to multiple components ot its third child 
-  //like its nested component, then send data from parent to a to b, to c, to d.
-  //its ok in small application where two to three nested loop made but in 10 to 12 nested loop 
-  //this can create complexity so we can avoid that
-  
-  const name='qasim ali sajjad'
+
+  const name='Qasim ali '
+  const gender='male'
   return (
      <>
-     <ChildA name={name}/>
-     
+     <data.Provider value={name}> 
+      <gend.Provider value={gender}>
+     <ChildA/>
+     </gend.Provider>
+     </data.Provider>
      </>
   )
   ;
 }
 
 export default App;
+export {data,gend}
