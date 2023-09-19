@@ -1,24 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { data,gend } from './App';
 
 function ChildC() {
+  const name=useContext(data);//actua;;u use context the problem like call back hell.
+  const gender=useContext(gend);//we can catch props here very easily and maintain this,
   return (
+
     <>
-      <data.Consumer>
-        {name => {
-          return (
-            <gend.Consumer>
-              {
-                gender=>{
-                  return(
-                  <h1> my name is {name}.my gender is {gender}</h1>
-                  );
-                }
-             }
-            </gend.Consumer>
-          );
-        }}
-      </data.Consumer>
+     <h1>hi i am {name}.i am {gender}</h1> 
     </>
   );
 }

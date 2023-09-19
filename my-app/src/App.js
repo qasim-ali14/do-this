@@ -5,6 +5,7 @@ import react, { createContext } from 'react'
 //how to avoid props drilling 
 //we use context api
 //three steps 1.create context 2.provider 3.consumer
+////how to maintain better  context api we usew use context hook:
 
 const data=createContext();
 const gend=createContext();
