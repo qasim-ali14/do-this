@@ -3,7 +3,7 @@ import { data,gend } from './App';
 
 function ChildC() {
   const name=useContext(data);//actua;;u use context the problem like call back hell.
-  const gender=useContext(gend);//we can catch props here very easily and maintain this,
+  const gender=useContext(gend);//so we can  catch props here very easily and maintain this,
   return (
 
     <>
