@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 function App() {
   const [name,setname]=useState("");
   const [lname,setlname]=useState("");
-  const [passs,setpass]=useState("");
+  const [passs,setpass]=useState("");//s
    function handle(e){
     if(e.target.name == "firstname"){ 
       const capp=(e.target.value).toUpperCase();
