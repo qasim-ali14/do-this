@@ -1,28 +1,31 @@
-import React, { useState,useMemo } from 'react'
- function App() {
-  const [add,setadd]=useState(0);
-  const [subtract,setsubtract]=useState(110);
-  const hello=useMemo(
-    function  multiply(){//use memo hook use to increase performance like stop
-      //repeating data on other components.
-      console.log("**************");
-      return add*10;//by using memo hook we cccan easily avoid the extra things which previosly
-      // printed by rendering other component also.
-  },[add])
+import React, { useState } from 'react'
+
+//controlled form mean we can controll the submission after the user click on submit button
+//uncontrolled mean that we did not control but dom controlled it  we use default behavior which js giving us.
+function App() {
+  const [name,setname]=useState("");
+  const [lname,setlname]=useState("");
+  const [passs,setpass]=useState("");
+   function handle(e){
+    if(e.target.name == "firstname"){ 
+      const capp=(e.target.value).toUpperCase();
+      setname(capp);
+    }
+    else if(e.target.name == "lastname"){   
+      const lower=(e.target.value).toLowerCase();
+      setlname(lower);
+    }
+    else
+    setpass(e.target.value);
+  }
   return (
     <div>
-      <h1> use memo hook</h1>
-      {hello}
-      <button onClick={()=>{
-        setadd(add+1);
-      }}>addition</button>
-      <span>{add}</span>  
-
-
-      <button  onClick={()=>{
-        setsubtract(subtract-1);
-      }}>minus</button>
-      <span>{subtract}</span>
+      <label htmlFor="fname">fname</label>
+      <input type='text' name="firstname" value={name} onChange={handle} /><br></br>
+     <label htmlFor="lname">lname</label>
+      <input type='text' name="lastname" value={lname} onChange={handle}/><br></br>
+      <label htmlFor="pass">password</label>
+      <input type='password' name="password" value={passs} onChange={handle}/><br></br>
     </div>
   )
 }
