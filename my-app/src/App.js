@@ -6,7 +6,7 @@ import React, { useRef } from 'react'
 function App() {
   const inputelement=useRef(0);
   function handle(){
-    inputelement.current.focus();//with use ref we can easily manipulate dom 
+    inputelement.current.focus();//with use ref we can easily manipulate dom ..
     //and add things.
   }
   return (
