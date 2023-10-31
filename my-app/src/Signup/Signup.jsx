@@ -14,7 +14,7 @@ import './Signup.css'
     console.log('registered');
   },[flag]);
   const handlesubmit=(e)=>{
-    e.preventDefault();
+    e.preventDefault(); 
     if(!data.name || !data.fname){
       alert('please complete all input');
     }
