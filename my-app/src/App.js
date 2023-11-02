@@ -1,27 +1,11 @@
-import React, { useState } from 'react'
-import "./App.css"
- function App() {
-  const [value,setvalue]=useState([]);
-  function add(){
-    setvalue([...value,{
-      id:value.length,
-      item:'qasim ali'
-    }])
-  }
-  
+import React from 'react'
+import Todolist from './Todolist'
+function App() {
   return (
-
-    <div className='App'>
-     <ol>
-      {
-        value.map((value)=>
-        
-        <li key={value.id}>{value.item}</li>
-        )
-      }
-     </ol>
-     <button onClick={add}>add item</button>
+    <div>
+      <Todolist/>
     </div>
   )
 }
-export default App;
+
+export default App

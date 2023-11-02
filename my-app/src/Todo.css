@@ -1,0 +1,72 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.main{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+   text-align: center;
+   margin: 2rem;
+   font-size: 2rem;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+
+}
+.Ap{    
+    justify-content: center ;
+}
+ input{
+    background-color: rgb(241, 228, 228);
+    border: 2px solid rgb(117, 117, 121);
+    display: inline-block;
+
+    border-radius: 1rem;
+    margin: 0rem 2rem 0rem 36rem;
+    padding: 0.5rem;
+}
+button{
+    width: 5rem;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    height: 2rem;
+
+}
+.list-heading{
+    border: 3px solid saddlebrown;
+    background-color: rgb(118, 222, 149);
+    border: 2px solid rgb(117, 117, 121);
+    /* display: inline-block; */
+    margin: 2rem 2rem 0rem 31rem;
+    padding: 0.5rem;
+    width: 18rem;
+    color: white;
+    border-radius: 1rem;
+
+
+}
+.list{
+    display: flex;
+}
+.btn{
+    width: 5rem;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    height: 2rem;
+    margin-top: 2rem;
+}
+.b{
+    margin:1rem 36rem;
+    padding: 3rem;
+}
+.b button{
+    width: 7rem;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    height: 3rem;
+    background-color: blue;
+    color: bisque;
+
+}
