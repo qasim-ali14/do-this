@@ -20,7 +20,7 @@ function Todolist() {
 
   }
   function removeall(){
-    setitem("")
+    setitem([])
   }
   return (
     <>
