@@ -1,11 +1,11 @@
 import React from 'react'
-import Todolist from './Todolist'
-function App() {
+import Counter from './Counter';
+ function App() {
   return (
     <div>
-      <Todolist/>
+      <Counter/>
+      
     </div>
   )
 }
-
-export default App
+export default App;
