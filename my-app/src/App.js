@@ -1,11 +1,13 @@
 import React from 'react'
-import Counter from './Counter';
- function App() {
+
+import Axiostotorial from './Signup/Axiostotorial';
+function App(){
   return (
     <div>
-      <Counter/>
+      <Axiostotorial/>
+      
       
     </div>
-  )
+  );
 }
 export default App;

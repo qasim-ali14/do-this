@@ -13,4 +13,4 @@ const  useLifthook=(count)=> {
 },[count])
 
 }
-export default useLiftshook;
+export default useLifthook;
